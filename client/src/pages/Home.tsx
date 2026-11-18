@@ -21,7 +21,6 @@ import { startLogin } from "../const";
 import { useLocale } from "../contexts/LocaleContext";
 import { SELF_REPORTED_NOTICE } from "@shared/bangladesh";
 
-const LOGO_SRC = "/manus-storage/bangladesh-ai-governance-logo_29827c3b.png";
 const HERO_SRC = "/manus-storage/bangladesh-ai-governance-hero_9a89313a.webp";
 
 type ModuleCard = {
@@ -175,9 +174,9 @@ export default function Home() {
       <header className="bd-home-header" id="home">
         <div className="bd-home-container bd-home-header-inner">
           <Link href="/" className="bd-home-brand" aria-label="Bangladesh AI Governance Platform home" onClick={closeMenu}>
-            <img className="bd-home-logo" src={LOGO_SRC} alt="Bangladesh AI Governance emblem" />
+            <span className="brand-mark" aria-hidden="true"><span /><span /><span /></span>
             <span className="bd-home-brand-copy">
-              <strong>Bangladesh<br className="bd-home-brand-break" /> AI Governance Platform</strong>
+              <strong>Bangladesh AI Governance Platform</strong>
               <small>Responsible AI for Bangladesh</small>
             </span>
           </Link>
@@ -323,9 +322,9 @@ export default function Home() {
         <div className="bd-home-container">
           <div className="bd-home-footer-main">
             <Link href="/" className="bd-home-brand bd-home-brand-footer" aria-label="Bangladesh AI Governance Platform home">
-              <img className="bd-home-logo" src={LOGO_SRC} alt="Bangladesh AI Governance emblem" />
+              <span className="brand-mark brand-mark-inverse" aria-hidden="true"><span /><span /><span /></span>
               <span className="bd-home-brand-copy">
-                <strong>Bangladesh<br className="bd-home-brand-break" /> AI Governance Platform</strong>
+                <strong>Bangladesh AI Governance Platform</strong>
                 <small>Responsible AI for Bangladesh</small>
               </span>
             </Link>
